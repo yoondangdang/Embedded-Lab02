@@ -69,7 +69,7 @@ END:
 
 ```
 ### 실행화면
- [![실행화면](media/lab02_01.webm)]
+ [![실행화면](https://raw.githubusercontent.com/cbchoi/Embedded-Lab02/master/media/lab02_01.webm)]
 
 ## 실습02 Shared Memory를 사용한 Multi-Player Console Game
  Shared Memory를 사용한 Multi-Player Console Game은 서로 다른 두 개의 프로세스를 실행시켜 각 프로세스의 정보를 교환하여 게임을 진행합니다. 이 때 Shared Memory를 사용하여 정보를 공유하며 while문을 실행할 때마다 Shared Memory 상의 데이터를 확인하여 게임 화면을 갱신합니다. 
@@ -218,7 +218,7 @@ END:
 
 ```
 ### 실행화면
- [![실행화면](media/lab02_02.webm)]
+ [![실행화면](https://raw.githubusercontent.com/cbchoi/Embedded-Lab02/master/media/lab02_02.webm)]
 
 ## 실습03 Multi-Thread를 사용한 콘솔 기반 게임
  Shared Memory를 사용한 Multi-Player Console Game은 서로 다른 두 개의 프로세스를 실행시켜 각 프로세스의 정보를 교환하여 게임을 진행합니다. 이 때 Shared Memory를 사용하여 정보를 공유하며 while문을 실행할 때마다 Shared Memory 상의 데이터를 확인하여 게임 화면을 갱신합니다. 
@@ -296,4 +296,4 @@ int main()
 
 ```
 ### 실행화면
- [![실행화면](media/lab02_03.webm)]
+ [![실행화면](mhttps://raw.githubusercontent.com/cbchoi/Embedded-Lab02/master/media/lab02_03.webm)]
