@@ -61,7 +61,11 @@ int main()
 	}	
 
 END:
-	printf("Program Terminated\n");
+	printf("Program Terminated\n");/*
+
+	/*
+	  Remove the shared memory
+	*/
 	changemode(0);
 	return 0;
 }

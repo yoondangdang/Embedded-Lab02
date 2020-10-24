@@ -140,6 +140,9 @@ int main()
 
 END:
 	printf("Program Terminated\n");
+	/*
+	  Remove the shared memory
+	*/
 	changemode(0);
 	return 0;
 }
@@ -212,6 +215,9 @@ int main()
 
 END:
 	printf("Program Terminated\n");
+	/*
+	  Remove the shared memory
+	*/
 	changemode(0);
 	return 0;
 }
@@ -297,3 +303,22 @@ int main()
 ```
 ### 실행화면
  [![실행화면](mhttps://raw.githubusercontent.com/cbchoi/Embedded-Lab02/master/media/lab02_03.webm)]
+
+# 수행해야 할 것
+ 1. st_player.c 구현: 동영상 강의를 참고하여 해당 코드 구현
+ 2. sm_player1.c, sm_player2.c 구현: shared memory를 사용하여 코드 구현
+ 3. mt_player.c 구현: multi-thread로 구현 (1차 힌트 없이 구현/2차 힌트를 받고 구현)
+ 4. (추가점수) mt_player1.c, mt_player2.c 구현: CMakeLists.txt를 수정하여 multi-thread를 사용한 콘솔 기반 게임 개발 (CMakeLists.txt 수정에 대해서는 웹 검색을 사용할 것)
+ 5. (추가점수) named pipe를 사용하여 np_player1.c, np_player2.c 구현: CMakeList.txt를 수정하여 multi-thread를 사용한 콘솔 기반 게임 개발 (CMakeLists.txt 수정에 대해서는 웹 검색을 사용할 것)
+ 6. (추가점수) Message Queue를 사용하여 mq_player1.c, mq_player2.c 구현: CMakeList.txt를 수정하여 multi-thread를 사용한 콘솔 기반 게임 개발 (CMakeLists.txt 수정에 대해서는 웹 검색을 사용할 것)
+
+# 평가(3점 + 2점)
+ - 1번 구현 시 0.25
+ - 2번 구현 시 1.00
+ - 3번 구현 시 1.75 ~ 2.25 (1차 시도시 2.25, 2차 시도시 1.75)
+ - 4번 구현 시 0.5
+ - 5번 구현 시 0.5
+ - 6번 구현 시 0.5
+ - (주의) 컴파일 에러가 날 시에는 0점 처리함 
+ - (주의) 런타임 에러가 날 시에는 20% 페널티 처리함
+ - (주의) 의미론적으로 문제가 있을 시에는 10% 페널티 처리함
