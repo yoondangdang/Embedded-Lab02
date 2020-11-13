@@ -29,24 +29,56 @@ int main()
 		{
 			switch(getchar())
 			{
-				/*
-				   case statement for process termination
-				*/
-
-				/*
-				   case statements for player 1
-				*/
-
-				/*
-				   case statements for player 2
-				*/
+				case 'q':
+				{	
+					goto END;
+				}
+				break;
+				case 'a':
+				{	
+					if(gi.player1 <=0)
+					{
+						gi.player1 = 0;
+					}
+					else 
+					{
+						gi.player1--;
+					}
+					
+				}
+				break;
+				case 'd':
+				{	
+					if(gi.player1 >=79)
+					{
+						gi.player1 = 79;
+					}
+					else 
+					{
+						gi.player1++;
+					}
+				}
+				break;
+					
+				
 			}
 	
 		}
 
-		/*
-			Code block for screen update
-		*/
+		for(i = 0; i<79; i++){
+		if(gi.player1 == i)
+		{
+			printf("*");
+		}
+		else if(gi.player2 == i){
+			printf("o");
+		}
+		else
+		{
+			printf(" ");
+		}
+		
+		}printf("\n");
 		
 		/* Update Frequency: 1 second*/
 		sleep(1);
