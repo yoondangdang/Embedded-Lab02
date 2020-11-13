@@ -36,20 +36,14 @@ int main()
 				break;
 				case 'a':
 				{	
-					if(gi.player1 <=0)
-					{
-						gi.player1 = 0;
-					}
-					else 
-					{
-						gi.player1--;
-					}
+					
+					gi.player <= 0 ? gi.player1 =0:gi.player1--;
 					
 				}
 				break;
 				case 'd':
 				{	
-					if(gi.player1 >=79)
+					if(gi.player1 >= 79)
 					{
 						gi.player1 = 79;
 					}
@@ -60,12 +54,40 @@ int main()
 				}
 				break;
 					
+				case'\033':
+				{
+				getchar ();
+				switch(getchar)())
+				{
+					case'D':
+					{
+						gi.player2 <= 0 ? gi.player2 =0:gi.player2--;
+					}
+					break;
+					case'C':
+					{
+						if(gi.player2 >= 79)
+					{
+						gi.player2 = 79;
+					}
+					else 
+					{
+						gi.player2++;
+					}
+					}
+					break;
+				
+				}
+				
+				
+				}
+					
 				
 			}
 	
 		}
 
-		for(i = 0; i<79; i++){
+		for(i = 0; i<80; i++){
 		if(gi.player1 == i)
 		{
 			printf("*");
